@@ -191,7 +191,9 @@ where
 select
     nombre_proveedor,numero_tel
 from 
-    proveedor;
+    proveedor
+where
+    nombre_proveedor in ('DeliQueso');
 --27. entrada del 2022-01-25
 select
     * 
@@ -205,7 +207,7 @@ select
 from    
     producto
 where
-    tipo=comestible;
+    tipo='comestible';
 --29. trabajadores con un sueldo mayor a 4000
 select
     *
